@@ -1,0 +1,50 @@
+.div1 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float : left;
+    
+  }
+  .div2 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float : right;
+  }
+  .div3 {
+    height: 100px;
+    width: 100px;
+    margin: 12% 50% ; 
+    float : right;
+  }
+  .div4 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float:left;
+  }
+  .div5 {
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    float : right;  
+  }
+  div {    
+    transition : transform 2s;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+  }
+  @keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  div:hover {
+    transform: scale(2,3);
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }

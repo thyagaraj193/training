@@ -1,0 +1,206 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            body{
+            
+             background-repeat:no-repeat;
+             background-size: cover;
+             background-size: 100% 100%;
+            }
+            input[type=text]:focus,[type=date]:focus {
+            background-color:lightblue;
+            }
+            input[type=radio]:focus,[type=checkbox]:focus {
+            width:15px;
+            height:15px;
+           
+            }
+            input[type="submit"],[type="reset"]
+            {
+                transition:transform 2s;
+            }
+            input{
+                padding:0px;
+                display:inline;
+            }
+            video {
+                
+                position: fixed;
+                right: 0;
+                top: 0;
+                height:auto;
+                width:auto;
+                z-index: -1;
+            }
+            form {
+                color:blueviolet;
+                font-style:oblique;
+            }
+            </style>
+        
+            </head>
+<body> 
+    <center>
+    <video poster="../media/poster.jpg" autoplay muted loop>
+        <source src="../media/vd.mp4" type="video/mp4" />
+        
+    </video> 
+ </center>
+
+    
+        <form method="post" action="welcome.html"  autocomplete="off" style="margin-left: 25%; margin-right:25%;padding-left:5%;padding-right:5%;padding-top:1%;padding-bottom:1%; border-radius: 25px; border: 5px solid lightblue;">
+        
+           <center>
+
+                <h2 style="color:blue;"><b>REGISTRATION FORM</b></h2>
+            </center>
+           
+                <div class="form-group">
+                    <label for="exampleInputEmail1" >FirstName*</label>
+                    <input type="text" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control " id="fname" name="name"    autocomplete="on" pattern="[A-Za-z]+" required >
+                    
+                <span id="sp1"></span>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1" >Last Name*</label>
+                    <input type="text" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control " id="lname" name="name"  required>
+                    <span id="sp2"></span>
+               </div>
+
+               <div class="form-group">
+                    <label for="exampleInputEmail1" >Password*</label>
+                    <input type="password" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control " id="Text1" name="name"  required>
+                   <span id="sp3"></span>
+               </div>
+           
+                    
+
+
+               <div class="form-group">
+                <label for="exampleInputEmail1">Date of Birth*</label>
+                <input type="date" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control " id="dob" name="dob" maxlength="10" required >
+            
+            </div>
+            
+            <div class="form-group">
+            <label for="exampleInputEmail1">Contact Number*</label>
+            <input type="tel" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control " id="number"  name="number" maxlength="10"   required >
+                
+            </div>
+
+        <div class="form-group row>
+            <label for="exampleInputEmail1">Email Address*</label>
+                <input type="text" onfocus="focuscol(this)" onblur="blurcol(this)"  class="form-control "  id="exampleInputEmail1" aria-describedby="emailHelp" class="form-control" id="email" name="email"  maxlength="100"  required >
+           
+        </div>
+
+        <div class="form-check form-check-inline">
+            <label for="exampleInputEmail1">Gender* :  </label>
+             <input type="radio" class="form-check-input" id="Male" name="gender" value="male" >
+            <label class="form-check-label" for="exampleRadios1"> Male  </label>
+        
+            <input type="radio"  class="form-check-input" id="Female" name="gender" value="female" >
+            <label class="form-check-label" for="exampleRadios1"> Female
+        
+                
+              </label>
+            <input type="radio" class="form-check-input" id="Other" name="gender" value="other">
+            <label class="form-check-label" for="exampleRadios1"> Others
+               
+              </label>
+            <span id="Sp7"></span>
+        </div>
+
+        <div class="form-group">    
+            <label for="exampleInputEmail1">Address*:</label>
+            <textarea name="address"  onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control" id="exampleFormControlTextarea1" value="address" rows="4" cols="40"  required></textarea>
+           
+        </div>
+
+        <div class="form-group">  
+        <label for="exampleInputEmail1">Last Company you Worked for*:</label>
+
+            <input type="text" id="company" onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control "  name="company" autocomplete="on" maxlength="100" pattern="[A-Za-z0-9]+"  >
+            
+        </div>
+            
+            <div class="form-group form-check-inline">  
+            <label for="exampleInputEmail1">Languages known :  </label>    
+            <input type="checkbox"  class="form-check-input" value="kannada" name="k">
+            <label class="form-check-label" for="exampleRadios1"> Kannada  </label>
+            <input type="checkbox"  class="form-check-input" value="English" name="e">
+            <label class="form-check-label" for="exampleRadios1">  English  </label>
+            <input type="checkbox"  class="form-check-input"value="Hindi" name="h">
+            <label class="form-check-label" for="exampleRadios1">  Hindi  </label>
+                
+            
+        </div><br />
+    <span id="sp10"></span>
+    
+        
+                <div class="form-group form-inline">
+                <label for="exampleInputEmail1" class="my-1 mr-2">Your Domain:</label>   
+             <input type="text" id="data" list="branch"  placeholder="Entert your B.E branch"  class="form-control ">
+              <datalist id="branch" >
+                 
+                 <option value="Computer Science and Engineering"></option>
+                 <option value="Electronics and Communication Engineering" ></option>
+                 <option value="Information Science and Engineering"></option>
+                 <option value="Mechanical Engineering"></option>
+                 <option value="Electrical and Electronics Engineering"></option>
+                
+             </datalist>  
+                    <b><span id="sp5"></span></b>
+            </div> 
+             
+            <div class="form-group">
+            <label for="exampleInputEmail1">Upload Your Resume*:</label>  
+            <input type="file" value="resume" name="resume" required >
+
+        </div>
+
+        <div class="form-group">
+                <label for="exampleInputEmail1">Comments/Questions:</label> 
+            <textarea name="Reference"  onfocus="focuscol(this)" onblur="blurcol(this)" class="form-control" id="exampleFormControlTextarea1" rows="4" cols="40" ></textarea>
+
+        </div>
+<center>
+        <div class="form-group"></div>
+
+            
+            <button type="button" style="width:90px;height:30px;border-radius:25px;" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+               submit
+              </button>
+              
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Registration completed successfully!!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Your response is saved.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <input type="submit" class="btn btn-primary" value="OK"/>
+                    </div>
+
+                  </div>
+                </div>
+              </div>    
+            <input type="reset"  class="btn btn-primary" value="Reset" style="width:90px;height:30px; border-radius:25px; ">
+         
+        </div>  
+      </center>
+</form>
+        
+</body>
+</html>

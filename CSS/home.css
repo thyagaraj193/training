@@ -1,0 +1,117 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+ header > div {
+     z-index: 2;
+     width: 100%;
+     height: 85px;
+     position: fixed;
+     top: 0;
+     background-color: #2295e2;
+ }
+ 
+ header img{
+     margin:0px 30px 30px 100px;
+     
+ }
+ header > div > nav{
+     display: inline-block;
+     position: absolute;
+     right: 30px;
+     height: 80px;
+     
+ }
+     header > div > nav > div {
+         display: inline-block;
+         margin-left: 10px;
+         width: auto;
+         padding-top: 22px;
+     }
+ header a {
+     color:white;
+     text-decoration: none;
+ }
+ header span:hover{
+     color:orange;
+ }
+ .image {
+     text-align: center;
+     position: absolute;
+     top:80px;
+     width: 100%;
+     padding-top: 100px;
+     padding-bottom: 100px;
+     background-image: url("../images/bg.jpg");
+ }
+ .image>div{
+     display:inline-block;
+ }
+ .image>a>img{
+     height:100px;
+     width:100px;
+ }
+     .image > input[type="button"] {
+         color: #fff;
+         background-color: #007bff;
+         border-color: #007bff;
+         text-align: center;
+         padding:10px 50px;
+         font-size: 1rem;
+         border-radius: 1rem;
+     }
+     .image > input[type="button"]:hover {
+         
+         padding: 12px 55px;
+         font-size: 1.2rem;
+         border-radius: 1rem;
+     }
+ .imageText {
+     font-size: 50px;
+     color: white;
+ }
+ section{
+     padding-left:100px;
+     position:absolute;
+     top:550px;
+ }
+ section > div{
+                       
+     width:45%;
+     display:inline-block;
+ }
+ footer > div {
+     width: 85%;
+     height: 120px;
+     position: absolute;
+     top: 1000px;
+     background-color: #2295e2;
+     padding-left:200px;
+     padding-top:50px;
+     padding-bottom:50px;
+
+ }
+ footer p{
+     font-size:28px;
+ }
+     footer > div > div {
+         float: left;          
+         width: 20%;
+         display: inline-block;
+         background-color: #2295e2;
+         color: white;
+     }
+     .pic:hover{
+        transform: scale(1.5, 2);
+        
+     }
+    /* @keyframes example {
+        0%   {background-image:url("../images/bg.jpg");}
+        25%  {background-image:url("../images/bg4.jpg");}
+        50%  {background-image:url("../images/bg5.jpg");}
+        100% {background-image:url("../images/bg6.jpg");}
+      }
+     .image:hover{
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+     }*/
